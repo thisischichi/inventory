@@ -32,12 +32,16 @@ class App extends Component {
       <div className="App">
         <h1>Simple Inventory</h1>
         <table>
-          <tr>
-            <th>Name</th>
-            <th>Current Count</th>
-            <th>Manual Count</th>
-          </tr>
-          {products.map(this.renderTable)}
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Current Count</th>
+              <th>Manual Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map(this.renderTable)}
+          </tbody>
         </table>
       </div>
     );
